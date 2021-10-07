@@ -266,8 +266,8 @@ The k6 Go-JS bridge has a few features we should highlight:
   For example, the struct field `SomeField string` will be accessible in JS as
   the `some_field` object property. This behavior is configurable with the `js`
   struct tag, so this can be changed with
-  <code>SomeField string &grave;js:"someField"&grave;</code>
-  or the field can be hidden with `js:"-"`.
+  <code>SomeField string `js:"someField"`</code>
+  or the field can be hidden with <code>`js:"-"`</code>.
 
 - Methods with a name prefixed with `X` will be transformed to JS
   constructors, and will support the `new` operator.
